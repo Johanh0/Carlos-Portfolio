@@ -2,16 +2,19 @@
 
 :root {
     --primary-color: #e76f51;
+    --primeray-color_hover: #f77a5b;
     --secondary-color: #323232;
     --white: #DEDEDE;
     --black: #202020;
     --grey: #959595;
+    --grey_hover: #a6a1a1;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -25,6 +28,7 @@ html {
 
 .nav-container {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -77,17 +81,6 @@ html {
     display: none;
 }
 
-/* .nav-links ul {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links ul li a {
-    text-decoration: none;
-    color: var(--white);
-    margin-left: 20px;
-    font-size: 2rem;
-} */
 
 /* HERO SECTION */
 
@@ -97,7 +90,7 @@ html {
     align-items: center;
     width: 100%;
     height: fit-content;
-    padding: 50px;
+    padding: 120px 50px 50px 50px;
 }
 
 .hero-txt {
@@ -128,6 +121,12 @@ html {
     height: 50px;
     border-radius: 8px;
     margin: 40px auto;
+    font-size: 1.8rem;
+}
+
+.hero-btn_email:hover {
+    background-color: var(--grey_hover);
+    transition: 0.5s ease-in-out;
 }
 
 .hero-btn_email span {
@@ -197,6 +196,12 @@ html {
     background-size: cover;
 }
 
+.project-5 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../assets/order.png);
+    background-position: center;
+    background-size: cover;
+}
+
 
 .projects-container div p {
     font-size: 1.6rem;
@@ -214,6 +219,11 @@ html {
     padding: 10px;
     border-radius: 10px;
     font-size: 1.7rem;
+}
+
+.projects-container div a:hover {
+    background-color: var(--primeray-color_hover);
+    transition: 0.5s ease-in-out;
 }
 
 .projects-container div a .github-icon {

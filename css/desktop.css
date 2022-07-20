@@ -1,0 +1,74 @@
+@media screen and (min-width: 1200px) {
+    /* NAV */
+
+    .nav-links {
+        display: block;
+    }
+
+    .nav-links ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav-links ul li a {
+        text-decoration: none;
+        color: var(--white);
+        margin-left: 60px;
+        font-size: 1.5rem;
+    }
+
+    .nav-links ul li a:hover {
+        color: var(--primary-color);
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-links ul li a:active {
+        color: var(--primary-color);
+    }
+
+
+    .nav-burger {
+        display: none;
+    }
+
+    /* HERO */
+
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hero-txt {
+        text-align: start;
+        font-size: 3rem;
+        max-width: 500px;
+    }
+
+    .hero-btn_email {
+        margin: 40px 0;
+    }
+
+    .hero-img img {
+        width: 400px;
+    }
+
+    /* PROJECT SECTION */
+
+    .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projects-container div {
+        width: none;
+    }
+
+    .project-1 {
+        width: 100%;
+    }
+
+    .project-2, .project-3, .project-4, .project-5 {
+        max-width: 45%;
+    }
+}
